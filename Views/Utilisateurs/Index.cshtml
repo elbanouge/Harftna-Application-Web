@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebApplicationHarftna.Models.Utilisateur>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nomutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenomutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Motpassutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emailutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cinpassutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imageutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Scoreutl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Iputl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emailverifier)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datecreate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nomutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenomutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Motpassutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emailutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cinpassutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imageutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Scoreutl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Iputl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emailverifier)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datecreate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idutl2">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idutl2">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idutl2">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

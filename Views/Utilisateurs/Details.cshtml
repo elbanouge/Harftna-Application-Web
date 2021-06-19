@@ -1,0 +1,84 @@
+﻿@model WebApplicationHarftna.Models.Utilisateur
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Utilisateur</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nomutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nomutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Prenomutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Prenomutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Motpassutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Motpassutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Emailutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Emailutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cinpassutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cinpassutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Imageutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Imageutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Scoreutl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Scoreutl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Iputl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Iputl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Emailverifier)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Emailverifier)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Datecreate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Datecreate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Idutl2">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
